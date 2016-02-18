@@ -1,0 +1,19 @@
+---
+- hosts: exemple-2
+  tasks:
+    - name: Installs nginx web server
+      package:
+        name: nginx
+        state: installed
+      notify:
+        - start nginx
+    - name: Templates the root document
+      template:
+        src: templates/index.html.j2
+        dest: /var/www/html/index.html
+
+  handlers:
+    - name: start nginx
+      service:
+        name: nginx
+        state: started
