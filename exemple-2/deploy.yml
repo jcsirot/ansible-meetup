@@ -1,5 +1,5 @@
 ---
-- hosts: exemple-2
+- hosts: nginx
   vars:
     db_login: "undefined"
     db_pass: "undefined"
