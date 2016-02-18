@@ -1,5 +1,9 @@
 ---
 - hosts: exemple-2
+  vars:
+    db_login: "undefined"
+    db_pass: "undefined"
+
   tasks:
     - name: Installs nginx web server
       package:
