@@ -3,7 +3,7 @@
   tasks:
     - name: Install dependencies for docker
       package:
-        name: {{ item }}
+        name: '{{ item }}'
         state: installed
       with_items:
         - apt-transport-https
