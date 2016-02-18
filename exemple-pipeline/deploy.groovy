@@ -10,7 +10,7 @@ node {
         extraVars: [
           db_login: 'jcsirot',
           db_pass: [value: '4K2Z_MZ+J;', hidden: true]
-        ]
+        ],
         colorized: true
       )
     }
