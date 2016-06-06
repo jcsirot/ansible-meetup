@@ -4,7 +4,7 @@ node {
     wrap([$class: 'AnsiColorBuildWrapper', colorMapName: "xterm"]) {
       ansiblePlaybook(
         inventory: 'hosts.cfg',
-        playbook: 'deplopy.yml',
+        playbook: 'deploy.yml',
         sudo: true,
         credentialsId: '3356be1d-bf9b-4a15-b41f-5617808a3877',
         extraVars: [
