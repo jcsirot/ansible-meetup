@@ -1,0 +1,7 @@
+---
+- hosts: exemple-vars
+  tasks:
+    - command: echo "{{ lookup('env','PATH') }}"
+      register: default_path
+    - command: echo "{{ lookup('env','WORKSPACE') }}"
+      register: jenkins_job_workspace
